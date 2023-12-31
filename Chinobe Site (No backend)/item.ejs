@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- skid if ur gay -devkelz!-->
+  <!-- skid if ur gay -devkelz!-->
+  <!-- skid if ur gay -devkelz!-->
+  <!-- skid if ur gay -devkelz!-->
+  <!-- skid if ur gay -devkelz!-->
+  <title><%-itemname%> - Chinobe</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/cdn/css/homestuff/style.css">
+    <link rel="stylesheet" href="/cdn/css/homestuff/style.css">
+<%- include("navbar") %>
+
+<style>
+    .item-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+    }
+    
+    .item-icon {
+      width: 200px;
+      height: 150px;
+      background-color: #0;
+      border-radius: 5px;
+    }
+    
+    .item-name {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    
+    .item-price {
+      margin-top: 5px;
+      color: #888;
+    }
+  </style>
+
+<center> 
+
+  <div class="item-icon"></div> 
+       <img src="https://tr.rbxcdn.com/7bc3376521f46ba36b30639bc92055ac/420/420/Hat/Png" alt="a"> <br>
+<h3>Item Name: <%-itemname%> </h3>
+<h5> Description: <%-itemdesc%> </h5>
+<h4>Price: <%-itemprice%> </h4>
+
+<center> <button class="button"><a href="/buy/--">Buy with R$</button>
+<button class="button button2">Buy with Tix</button> </center>

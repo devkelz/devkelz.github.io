@@ -1,0 +1,154 @@
+  <link rel="stylesheet" href="/homestuff/style.css">
+  <style>
+
+    .row.content {height: 550px}
+    
+
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+        
+
+    @media screen and (max-width: 767px) {
+      .row.content {height: auto;} 
+    }
+  </style>
+</head>
+<body>
+ 
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+ <link rel="stylesheet" href="/cdn/css/homestuff/navbar.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="logo_item">
+        <i class="bx bx-menu" id="sidebarOpen"></i>
+        <img src="https://media.discordapp.net/attachments/816404724760444939/1180512927208443974/download_6.png" alt="ChinobeLogo"></i>Chinobe
+      </div>
+      <div class="search_bar">
+        <input type="text" placeholder="Search" />
+      </div>
+      <div class="navbar_content">
+        <i class="bi bi-grid"></i>
+         <i class='bx bx-darkLight' id="darkLight"></i>
+        <i class='bx bx-bell' ></i>
+        Robux: <%- robux %> |
+        Tix: <%- tix %>
+        <img src="https://chinob.xyz/placeholder.png" alt="" class="profile" />
+       <a href="/logout">Logout</a>
+      </div>
+    </nav>
+
+    <nav class="sidebar">
+      <div class="menu_content">
+        <ul class="menu_items">
+          <div class="menu_title menu_dahsboard"></div>
+         
+          <li class="item">
+            <a href="/" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-home"></i>
+              </span>
+              <span class="navlink">Home</span>
+            </a>
+          </li>
+<li class="item">
+            <a href="/games/" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-joystick-button"></i>
+              </span>
+              <span class="navlink">Games</span>
+            </a>
+          </li>
+           <li class="item">
+            <a href="/users/<%-id%>/profile" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-user"></i>
+              </span>
+              <span class="navlink">Profile</span>
+            </a>
+          </li>
+        <li class="item">
+            <a href="/marketplace" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-shopping-bag"></i>
+              </span>
+              <span class="navlink">Marketplace</span>
+            </a>
+          </li>
+<li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-user-plus"></i>
+              </span>
+              <span class="navlink">Friends</span>
+            </a>
+          </li>
+<li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-edit"></i>
+              </span>
+              <span class="navlink">Avatar</span>
+            </a>
+          </li>
+<li class="item">
+            <a href="/inventory" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bxs-backpack"></i>
+              </span>
+              <span class="navlink">Inventory</span>
+            </a>
+          </li>
+<li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-right-arrow-circle"></i>
+              </span>
+              <span class="navlink">Trading</span>
+            </a>
+          </li>
+<li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-group"></i>
+              </span>
+              <span class="navlink">Groups</span>
+            </a>
+          </li>
+<li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bxl-blogger"></i>
+              </span>
+              <span class="navlink">Blog</span>
+            </a>
+          </li>
+            </ul>
+          </li>
+          
+        </ul>
+        <ul class="menu_items">
+          <div class="menu_title menu_editor"></div>
+          
+          
+
+       
+        <div class="bottom_content">
+          <div class="bottom expand_sidebar">
+            <span> Expand</span>
+            <i class='bx bx-right-arrow' ></i>
+          </div>
+          <div class="bottom collapse_sidebar">
+            <span> Collapse</span>
+            <i class='bx bx-left-arrow'></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- JavaScript -->
+    <script src="/cdn/js/homestuff/navbarscript.js"></script>
+  </body>
+</html>
